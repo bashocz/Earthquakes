@@ -4,11 +4,47 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Earthquakes</title>
-    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/content/bootstrap.css" rel="stylesheet" />
+    <link href="/content/site.css" rel="stylesheet" />
 
-    <script src="/Scripts/modernizr-2.6.2.js"></script>
+    <script src="/scripts/modernizr-2.6.2.js"></script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script src="app/app.js"></script>
 </head>
+
 <body>
-    <h1>Earthquakes</h1>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <h1 class="navbar-text">Earthquakes</h1>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div>
+            <h4>Earthquakes in the city</h4>
+            <div class="navbar-btn">
+                City name:<br />
+                <input id="city-name" />
+            </div>
+            <div class="navbar-btn">
+                <button>Show!</button>
+            </div>
+        </div>
+        <div id="map-canvas"></div>
+        <div>
+            <h4>Top 10 World's largest earthquakes in the last 12 months</h4>
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; 2015 - Basho</p>
+        </footer>
+    </div>
+
+    <script src="/scripts/jquery-1.10.2.js"></script>
+
+    <script src="/scripts/bootstrap.js"></script>
+    <script src="/scripts/respond.js"></script>
 </body>
 </html>
